@@ -1,0 +1,110 @@
+.page-container{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 300px 100px 1fr 400px;
+    grid-template-areas: "header social"
+                         "menu menu"
+                         "page news"
+                         "footer footer";       
+}
+
+
+
+.title-logo{
+    width: 400px;
+}
+
+.item0{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(66, 41, 24);
+    grid-area: header;
+}
+
+.item1{
+    background-color: brown;
+    grid-area: social;
+}
+
+.item2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: goldenrod;
+    grid-area: menu; 
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.item3{
+    background-color: yellow;
+    grid-area: page;
+}
+
+.item4{
+    background-color: brown;
+    grid-area: news;
+}
+
+.item5{
+    background-color: black;
+    grid-area: footer;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 3fr;
+    grid-template-areas: "logo logo logo logo"
+                         "copy copy copy copy"
+                         "navi lorem pegi pegi";
+}
+
+.logo-footer{
+    background-color: #414141;
+    grid-area: logo;
+}
+
+.copyright{
+    background-color: #414141;
+    grid-area: copy;
+}
+
+.footer-nav{
+    background-color: #414141;;
+    grid-area: navi;
+}
+
+.loren-footer{
+    background-color: #414141;;
+    grid-area: lorem;
+}
+
+.pegi-footer{
+    background-color: #414141;;
+    grid-area: pegi;
+}
+
+.text-two{
+    background-image: url(./image/background2.jpg);
+    border: solid;
+    border-top: 5px;
+    border-bottom: 5px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+}
